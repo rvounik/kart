@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimal-ui">
+
+  <meta property="og:image" content="">
+  <meta property="og:title" content="Mario Kart proof of concept">
+
+  <title>Mario Kart proof of concept using mode7-style zooming</title>
+
+  <link href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
+  <style>
+
+   body {
+     background: #222;
+   }
+
+   .wrapper {
+     max-width: 800px;
+     margin: 0 auto;
+   }
+
+   h1 {
+     color: #fff;
+     font-family: verdana;
+     font-size: 20px;
+   }
+
+    canvas {
+      image-rendering: optimizeSpeed;             /* Older versions of FF          */
+      image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+      image-rendering: -webkit-optimize-contrast; /* Safari                        */
+      image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+      image-rendering: pixelated;                 /* Awesome future-browsers       */
+      -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+    }
+
+   #myCanvas {
+     width:100%;
+   }
+
+   ul {
+     list-style: none;
+     padding: 10px;
+   }
+
+   li {
+     color: #fff;
+     font-family: verdana;
+     font-size: 12px;
+     padding: 5px 0;
+   }
+
+  </style>
+</head>
+
+<body onload="preload();">
+
+<div class="wrapper">
+  <h1>Mario Kart - <i>proof of concept</i></h1>
+  <div class="canvasHolder">
+    <canvas id="myCanvas" width="800" height="600" style="background:#000000;"></canvas>
+  </div>
+</div>
+
+<script type="text/javascript" src="lib/preloadjs-0.6.0.min.js"></script>
+<script type="text/javascript" src="lib/soundjs-0.6.0.min.js"></script>
+<script type="text/javascript" src="lib/easeljs-0.8.0.min.js"></script>
+<script type="text/javascript" src="js/kart.js"></script>
+
+</body>
+</html>
