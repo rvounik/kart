@@ -13,3 +13,5 @@ features:
 - Graphics and music (you do have your speakers on, right?) borrowed from the Super Nintendo game Mario Kart.
 - Yes, its not perfect: no opponents, no objects and incomplete collision detection. I know! Its a POC for a reason.
 - Control your kart using the cursor keys or WASD (sorry, no touch support).
+
+rvo, 2015
